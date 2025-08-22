@@ -1,0 +1,39 @@
+# CODEOWNERS file for social-tool-11
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-security @Armor-test/unit-ux @Armor-test/dept-frontend
+
+# Directory ownership
+/migrations/ @Armor-test/unit-storage @Armor-test/grp-sre @Armor-test/unit-logging
+/extensions/ @Armor-test/dept-ui @Armor-test/unit-storage @Armor-test/squad-reporting
+/common/ @Armor-test/grp-reporting @Armor-test/unit-mobile
+/pages/ @Armor-test/team-logging @Armor-test/dept-ui
+/plugins/ @Armor-test/grp-apps @Armor-test/dept-reliability @Armor-test/grp-release
+/auth/ @Armor-test/team-core @Armor-test/dept-frontend @Armor-test/grp-sre
+/core/ @Armor-test/grp-apps @Armor-test/grp-ui
+/services/ @Armor-test/unit-storage @Armor-test/unit-mobile
+/tests/ @Armor-test/squad-ui @Armor-test/dept-messaging
+/web/ @Armor-test/squad-reporting @Armor-test/team-core
+/scripts/ @Armor-test/squad-search @Armor-test/grp-release
+/models/ @Armor-test/dept-frontend @Armor-test/grp-reliability @Armor-test/unit-search
+/src/ @Armor-test/dept-database @Armor-test/grp-sre
+
+# File type ownership
+*.html @Armor-test/team-support @Armor-test/team-qa @Armor-test/unit-mobile
+*.scss @Armor-test/grp-ui @Armor-test/dept-qa @Armor-test/unit-ux
+*.py @Armor-test/dept-reliability @Armor-test/grp-sre
+*.toml @Armor-test/dept-network @Armor-test/dept-devops @Armor-test/team-product
+*.xml @Armor-test/team-auth @Armor-test/squad-automation @Armor-test/team-architecture
+*.md @Armor-test/dept-data @Armor-test/team-content @Armor-test/unit-mobile
+*.js @Armor-test/unit-ux @Armor-test/team-research
+*.rb @Armor-test/squad-notifications @Armor-test/dept-qa
+*.tf @Armor-test/dept-devops @Armor-test/squad-search @Armor-test/squad-notifications
+*.java @Armor-test/team-metrics @Armor-test/dept-frontend @Armor-test/team-logging
+*.ini @Armor-test/unit-search @Armor-test/team-product
+*.yml @Armor-test/team-logging @Armor-test/dept-qa @Armor-test/squad-automation
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+Dockerfile @Armor-test/devops @Armor-test/infra
